@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <title>Use Case</title>
+  <link rel="stylesheet" href="../static/style.css" type="text/css"><form action="{{ url_for('authenticate') }}" method="post">
+</head>
+<body>
+<div class="login-page">
+	 <div class="images">
+	 <a href="https://www.kyh.se"><img src="../KYH-logo.png" alt="KYH Logo" id="kyh"></a>
+	 </div>
+	 <form action="authenticate.php" method="post">
+	 	   	 <label for="username">Username:</label>
+			 <input type="text" name="username" id="username" placeholder="Enter Username" required>
+
+			 <br>
+			 <label for="password">Password:</label>
+			 <input type="password" name="password" id="password" placeholder="Enter Password" required>
+
+	 </form>
+			 <div class="bottom">
+			 	  <p>Forgot <a href="">password</a>?</p>
+			  	  <input type="submit" id="login" value="Login">
+
+			 </div>
+
+
+
+</div>
+</body>
+</html>
